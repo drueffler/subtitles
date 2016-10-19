@@ -1,0 +1,43 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><script>
+xmlns="http://www.w3.org/2000/svg"
+function timedText(evt){
+ SVGRoot=evt.target
+      setTimeout(Write,0,     "-300","100","Erde",   "0ms"); 
+      setTimeout(Write,0,     "-300","150","Wasser", "0ms");
+      setTimeout(Write,0,     "-300","200","Benzin", "0ms");
+      setTimeout(Write,5000,  "-300","100","Indol",  "5000ms"); 
+      setTimeout(Write,5000,  "-300","150","Erde",   "5000ms");
+      setTimeout(Write,5000,  "-300","200","Wasser", "5000ms");
+      setTimeout(Write,10000, "-300","100","Zitrone","10000ms"); 
+      setTimeout(Write,10000, "-300","150","Indol",  "10000ms");
+      setTimeout(Write,10000, "-300","200","Erde",   "10000ms");
+      setTimeout(Write,15000, "-300","100","-",      "15000ms"); 
+      setTimeout(Write,15000, "-300","150","Zitrone","15000ms");
+      setTimeout(Write,15000, "-300","200","Indol",  "15000ms");
+      setTimeout(Write,0,     "-300","100",".",      "20000ms"); 
+      setTimeout(Write,0,     "-300","150","-",      "20000ms");
+      setTimeout(Write,20000, "-300","200","Zitrone","20000ms");
+}
+var SVGRoot
+function Write(x,y,m,b){
+ var A=document.createElementNS(xmlns,"animate")
+ A.setAttributeNS(null,"attributeName","x")
+ A.setAttributeNS(null,"from","2200")
+ A.setAttributeNS(null,"to","-200")
+ A.setAttributeNS(null,"begin",b)
+ A.setAttributeNS(null,"dur","20s")
+ var T=document.createElementNS(xmlns,"text")
+ T.setAttributeNS(null,"x",x)
+ T.setAttributeNS(null,"y",y)
+ T.setAttributeNS(null,"font-size","55pt")
+ Msg=document.createTextNode(m)
+ T.appendChild(Msg)
+ T.appendChild(A)
+ SVGRoot.appendChild(T)
+}
+</script></head><body>
+<b>scriptable SVG in XHTML</b><br/>
+<svg id="SVG" xmlns="http://www.w3.org/2000/svg" 
+ onload="timedText(evt)" width="2000" height="200">
+</svg></body></html>

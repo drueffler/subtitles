@@ -1,0 +1,77 @@
+<!doctype html><html><head><META http-equiv="Content-Type" content="text/html; charset=UTF-16">
+<style type="text/css">center {color:white; font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;} </style>
+<script>
+var seconds = 0, minutes = 0, hours = 0, t;
+     function add() { seconds++; if (seconds >= 60) { seconds = 0; minutes++; if (minutes >= 60) { minutes = 0; hours++;}  }  document.getElementById('time').innerHTML = 
+       (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds)
+       timerA(); }
+     function timerA() { t = setTimeout(add, 1000); }
+     function timedText(){
+      setTimeout(f,0, "row1tick1","Erde,"); 
+      setTimeout(f,0, "row2tick1","Zucker,");
+      setTimeout(f,0, "row3tick1","Fisch,");
+      setTimeout(f,5017, "row1tick1","Pilze,"); 
+      setTimeout(f,5017, "row2tick1","Indol,");
+      setTimeout(f,5017, "row3tick1","Wein,");
+      setTimeout(f,10035, "row1tick1","Maritima,"); 
+      setTimeout(f,10035, "row2tick1","Zwiebel,");
+      setTimeout(f,10035, "row3tick1","Linoleum,");
+      setTimeout(f,15053, "row1tick1","Erde,"); 
+      setTimeout(f,15053, "row2tick1","Schweiß,");
+      setTimeout(f,15053, "row3tick1","Parfum,");
+      setTimeout(f,20070, "row1tick1","Cola,"); 
+      setTimeout(f,20070, "row2tick1","Gummi,");
+      setTimeout(f,20070, "row3tick1","Benzin,");
+      setTimeout(f,25088, "row1tick1","Labdanum,"); 
+      setTimeout(f,25088, "row2tick1","Münze,");
+      setTimeout(f,25088, "row3tick1","Kabelbrand,");
+      setTimeout(f,30106, "row1tick1","Erde,"); 
+      setTimeout(f,30106, "row2tick1","Holz,");
+      setTimeout(f,30106, "row3tick1","Tieger,");
+      setTimeout(f,35124, "row1tick1","Zibet,"); 
+      setTimeout(f,35124, "row2tick1","Deo,");
+      setTimeout(f,35124, "row3tick1","Desinfektion,");
+     }
+     function vt(t){ document.getElementById('vartest').innerHTML = t;}
+
+     function f(lineID,scentTitle){
+       var smeller       = document.getElementById("smeller");
+       var scent         = smeller.getElementById(lineID).textContent;
+       smeller.getElementById(lineID).textContent = scentTitle;
+       scent             = smeller.getElementById(lineID).textContent;
+       var xmlns="http://www.w3.org/2000/svg"
+       T.createElementNS(xmlns,"text")
+       vt(lineID);
+       T.setAttributeNS(null,"x",222);
+       T.setAttributeNS(null,"y",111);
+       T.setAttributeNS(null,"font-size","72pt");
+       Msg=document.createTextNode("Gagaggagaggag");
+       T.appendChild(Msg);
+       smeller.appendChild(T);
+
+
+     }
+
+</script>
+</head><body style="background-color:#AABBCC"><center><br><br></center><center>osmodrama.com</center><center><br><br></center>
+<center><button onclick="timerA(); timedText(); vt();">Scenting Phill Niblocks Baobap</button></center><center><br></center>
+<center>
+  <svg xmlns="http://www.w3.org/2000/svg"
+       xmlns:xlink="http://www.w3.org/1999/xlink"
+       id="smeller" width="3000" height="200">
+    var xmlns="http://www.w3.org/2000/svg"
+    var Root=document.documentElement
+
+    <style> text { font-size: 24px; font-family: Tahoma, sans-serif;}</style>
+    <text x="200" y="120" text-anchor="end" id="row1tick1">-<animate attributeName="x" from="200" to="1600" begin="0s" dur="15s" repeatCount="indefinite"></animate></text>
+    <text x="200" y="140" text-anchor="end" id="row2tick1">-<animate attributeName="x" from="200" to="1600" begin="0s" dur="15s" repeatCount="indefinite"></animate></text>
+    <text x="200" y="160" text-anchor="end" id="row3tick1">-<animate attributeName="x" from="200" to="1600" begin="0s" dur="15s" repeatCount="indefinite"></animate></text>
+    <rect width="750" height="150" style="fill:rgb(0,255,0);stroke-width:0;stroke:rgb(0,0,0);opacity:0.85" x="0" y="50"></rect>
+    <rect width="150" height="150" style="fill:rgb(0,0,210);stroke-width:0;stroke:rgb(0,0,0);opacity:0.10" x="900" y="50"></rect>
+    <rect width="150" height="150" style="fill:rgb(0,0,255);stroke-width:0;stroke:rgb(0,0,0);opacity:0.50" x="1200" y="50"></rect>
+    <rect width="250" height="150" style="fill:rgb(255,0,0);stroke-width:0;stroke:rgb(0,0,0);opacity:0.95" x="1500" y="50"></rect>
+  </svg>
+
+</center>
+<center><div id="vartest">huhu</div></center>
+<center><br></center><center><div id="time">--:--:--</div></center><center><br></center><center>bit.ly/OsmoSmeller</center><center><br></center></body></html>
