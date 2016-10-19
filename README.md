@@ -20,3 +20,8 @@ http://www.apowersoft.com/free-online-screen-recorder
 The set of files named "a" represent the initial approach for displaying text alon a timeline - by html
 Future or following sets of files will represent different approaches and show other names like "b", "c", ...
 The html approach will be followed by a svg apporach: "b"
+
+a - html apporach
+b - svg approach failed: After rewriting text node animation is lost - don't know why
+c - svg approach better: No rewriting of nodes - continuously adding new nodes - success with animation 
+d - svg approach big picture: creating big grouped picture with only one animatinon: Translate the group
