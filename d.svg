@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+  "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg width="1500" height="300" xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Scenting Baobap</title>
+  <desc>textfeld bewegen</desc>
+
+  <!-- Definition des Textfeldes -->
+  <g id="Textfeld">
+    <text x="0"   y="100" text-anchor="end" id="row1tick1">-</text>
+    <text x="0"   y="150" text-anchor="end" id="row2tick1">-</text>
+    <text x="0"   y="200" text-anchor="end" id="row3tick1">-</text>
+
+    <text x="100" y="100" text-anchor="end" id="row1tick1">-</text>
+    <text x="100" y="150" text-anchor="end" id="row2tick1">x</text>
+    <text x="100" y="200" text-anchor="end" id="row3tick1">-</text>
+
+    <text x="200" y="100" text-anchor="end" id="row1tick1">-</text>
+    <text x="200" y="150" text-anchor="end" id="row2tick1">-</text>
+    <text x="200" y="200" text-anchor="end" id="row3tick1">-</text>
+
+    <text x="300" y="100" text-anchor="end" id="row1tick1">-</text>
+    <text x="300" y="150" text-anchor="end" id="row2tick1">-</text>
+    <text x="300" y="200" text-anchor="end" id="row3tick1">-</text>
+
+    <text x="400" y="100" text-anchor="end" id="row1tick1">-</text>
+    <text x="400" y="150" text-anchor="end" id="row2tick1">x</text>
+    <text x="400" y="200" text-anchor="end" id="row3tick1">-</text>
+
+    <text x="500" y="100" text-anchor="end" id="row1tick1">-</text>
+    <text x="500" y="150" text-anchor="end" id="row2tick1">-</text>
+    <text x="500" y="200" text-anchor="end" id="row3tick1">-</text>
+  </g>
+
+  <!-- hier beginnt die Animation -->
+  <animateTransform xlink:href="#Textfeld"
+    type="translate" attributeName="transform"
+    begin="0s" dur="20s"
+    from="1600" to="-100"
+    fill="freeze" />
+</svg>
