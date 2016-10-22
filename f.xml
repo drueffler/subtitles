@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<?xml-stylesheet type="text/xsl" href="e.xsl"?>
+<?xml-stylesheet type="text/xsl" href="f.xsl"?>
 <TOTAL>
 <MIDIFile>
 <Format>0</Format>
@@ -6569,7 +6569,7 @@
 <smell><note>47</note><scent>Pferd</scent></smell>
 <smell><note>48</note><scent>Käse</scent></smell>
 <smell><note>49</note><scent>Zibet</scent></smell>
-<smell><note>50</note><scent>Schwei&#223;</scent></smell>
+<smell><note>50</note><scent>Schweiß</scent></smell>
 <smell><note>51</note><scent>Aas</scent></smell>
 <smell><note>52</note><scent>Tieger</scent></smell>
 <smell><note>53</note><scent>Cola</scent></smell>
