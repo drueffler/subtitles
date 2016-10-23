@@ -17,13 +17,13 @@ var seconds = 0, minutes = 0, hours = 0, t;
       setTimeout(f,10035, "row2tick1","Zwiebel,");
       setTimeout(f,10035, "row3tick1","Linoleum,");
       setTimeout(f,15053, "row1tick1","Erde,"); 
-      setTimeout(f,15053, "row2tick1","Schweiß,");
+      setTimeout(f,15053, "row2tick1","SchweiÃŸ,");
       setTimeout(f,15053, "row3tick1","Parfum,");
       setTimeout(f,20070, "row1tick1","Cola,"); 
       setTimeout(f,20070, "row2tick1","Gummi,");
       setTimeout(f,20070, "row3tick1","Benzin,");
       setTimeout(f,25088, "row1tick1","Labdanum,"); 
-      setTimeout(f,25088, "row2tick1","Münze,");
+      setTimeout(f,25088, "row2tick1","MÃ¼nze,");
       setTimeout(f,25088, "row3tick1","Kabelbrand,");
       setTimeout(f,30106, "row1tick1","Erde,"); 
       setTimeout(f,30106, "row2tick1","Holz,");
@@ -35,9 +35,7 @@ var seconds = 0, minutes = 0, hours = 0, t;
      function vt(t){ document.getElementById('vartest').innerHTML = t;}
 
      function f(lineID,scentTitle){
-       var smeller       = document.getElementById("smeller");
-       var scent         = smeller.getElementById(lineID).textContent;
-       smeller.getElementById(lineID).textContent = scentTitle;
+       smeller.getElementById(lineID).childNodes[0].nodeValue = scentTitle;
        scent             = smeller.getElementById(lineID).textContent;
        var xmlns="http://www.w3.org/2000/svg"
        T.createElementNS(xmlns,"text")
